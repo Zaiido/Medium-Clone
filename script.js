@@ -7,6 +7,12 @@ const headerChange = function () {
     headerNode.style.transition = "all 300ms";
     headerNode.style.backgroundColor = "white";
     specialLinkNode.style.backgroundColor = "#1A8917";
+    specialLinkNode.addEventListener("mouseover", function (event) {
+      event.target.style.backgroundColor = "#177814";
+    });
+    specialLinkNode.addEventListener("mouseout", function (event) {
+      event.target.style.backgroundColor = "#1A8917";
+    });
   } else {
     headerNode.style.backgroundColor = "#FFC017";
   }
